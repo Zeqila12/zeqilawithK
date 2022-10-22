@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zeqila</title>
+</head>
+<body>
+<h1> <center> <font color="black" size="7"> Introductory web of Zeqila </font> </center> </h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 13px;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color: white;}
+#Q and A {background-color: white;}
+#Contact {background-color: white;}
+#About {background-color: white;}
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('Home', this, 'Black')">Home</button>
+<button class="tablink" onclick="openPage('Q and A', this, 'black')"> Q and A </button>
+<button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+<div id="Home" class="tabcontent">
+  <h1><FONT COLOR="black" SIZE=5>In this tab, I write essays and share my opinions on different topics</FONT></h1>
+  <p>Home is where the heart is..</p>
+</div>
+<div id="Q and A" class="tabcontent">
+  <h1><font color="black" size=4><center>The below are the questions that you could ask me by submitting them, and the answers that I would provide</center></font></h1>
+  <p>Some news this fine day!</p> 
+</div>
+<div id="Contact" class="tabcontent">
+  <h3><font color="black" size="6">If you feel the need to contact me, I am on:</font></h3>
+  <p><font color="black" size="5"><I><ol>
+  <h7><li>Facebook: <A HREF="https://www.facebook.com/profile.php?id=100006812434900">Zeqila</A></li>
+  <li>Instagram:<A HREF="https://www.instagram.com/zeqila_12/">Zeqila</A>
+  </li>
+  <li> Email: <A HREF="zeqila12@outlook.com">Zeqila</A></li>
+  <li> Discord: <b> Zeqila#5146 </b></li>
+  <li> Wechat ID: <b> wxid_esddrg9evrzc22 </b></li>
+  <li> Tel: <b> +97680083443 </b></li></h7>
+  <ol></I></font></p>
+</div>
+<div id="About" class="tabcontent">
+  <h3 background=/Users/zekzesee/Downloads/8-4xSFh3QTrPx81TY.png><font color="black" size="6">The rudimentary understanding of me</font></h3>
+  <p><font color="black" size="5">
+  <ul> <li>I do study in China University of Petroleum</li>
+  <li>I used to play chess and PUBGM competitively and have had decent prizes</li>
+  <li> I speak Mongolian and English at a native level and an advanced level, respectively </li>
+  <li> I am also fond of playing video games, watching anime, Netflix, HBO series, and/or Kdramas (from time to time), and football </li>
+  <li> I have been abroad a few times, which made my open-mindedness escalate </li>
+  <li> These are two of the few videos of me playing PUBGM 
+    <iframe width="720" height="360" src="/Users/zekzesee/Downloads/79bd8a65085f4a86a0429f19aa61e430.MP4" frameborder="0" allowfullscreen>
+</iframe>
+    <iframe width="720" height="360" src="/Users/zekzesee/Downloads/998e19509c71476db44de2e1c037ff17.MP4" frameborder="0" allowfullscreen>
+     </iframe> 
+
+
+  </ul>
+  </p>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<p></p>
+</body>
+</html>
+
+
